@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:gravity="right"
+    android:id="@+id/llTop"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_alignParentLeft="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvRText"
+        android:textStyle="bold"
+        android:padding="@dimen/_5sdp"
+        android:textColor="#000"
+        android:text="You:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+
+
+android:orientation="vertical"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+android:id="@+id/rlTopStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_3sdp"
+                android:background="@drawable/btn_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    android:src="@drawable/ic_format_quote_black_24dp"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <TextView
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="Aman"
+                    android:id="@+id/tvSRName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:drawableLeft="@drawable/ic_image_black_24dp"
+android:gravity="center"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="Photo"
+                    android:id="@+id/tvSRPhotoVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/ivSRImage"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bubble_in"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_chat_sender"
+        android:orientation="vertical"
+        android:id="@+id/llRMessageSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/ivRQuote"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:src="@drawable/ic_format_quote_white_24dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp" />
+    <TextView
+        android:gravity="right"
+        android:layout_gravity="right"
+
+       android:id="@+id/tvRMessage"
+        android:padding="@dimen/_4sdp"
+        android:textColor="#fff"
+        android:text="Hlo how are you."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="normal"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:id="@+id/tvRSenderName"
+        android:padding="@dimen/_2sdp"
+        android:textColor="#000"
+        android:text="Sunil."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@drawable/selector"
+        android:id="@+id/llRImage"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_grey"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/bg_messages"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/ivRImage"
+            android:src="@drawable/bubble_in"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_width="@dimen/_150sdp"
+           android:scaleType="fitXY"
+            app:riv_corner_radius="5dip"
+            app:riv_border_width="2dip"
+            app:riv_border_color="#56C7C6C6"
+
+            android:layout_alignParentRight="true"
+            app:riv_oval="false" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivRForward"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/left"
+         android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="normal"
+        android:paddingLeft="@dimen/_10sdp"
+
+        android:id="@+id/tvRTime"
+        android:padding="@dimen/_2sdp"
+        android:textColor="#000"
+        android:text="2020-01-24 03:15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="left"
+        android:id="@+id/llBottom"
+        android:layout_below="@+id/llTop"
+        android:layout_margin="@dimen/_10sdp"
+ android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLText"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#000"
+            android:text="Receiver:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rlBottomStatus"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_3sdp"
+                android:background="@drawable/btn_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    android:src="@drawable/ic_format_quote_black_24dp"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp" />
+                <TextView
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="Aman"
+                    android:id="@+id/tvSLName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_image_black_24dp"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="Photo"
+                    android:id="@+id/tvSLPhotoVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+         android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/ivSLImage"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bubble_in"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+        </RelativeLayout>
+<LinearLayout
+    android:background="@drawable/shape_chat_receiver"
+
+    android:orientation="vertical"
+    android:id="@+id/llLMessageSend"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:id="@+id/ivLQuote"
+        android:src="@drawable/ic_format_quote_black_24dp"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp" />
+        <TextView
+            android:id="@+id/tvLMessage"
+            android:padding="@dimen/_4sdp"
+            android:textColor="#000"
+            android:text="Hlo how are you."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+        <TextView
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:paddingLeft="@dimen/_10sdp"
+
+            android:id="@+id/tvLSenderName"
+            android:padding="@dimen/_2sdp"
+            android:textColor="#000"
+            android:text="  Sunil."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@drawable/selector"
+android:id="@+id/llLImage"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_alignParentLeft="true"
+
+android:visibility="gone"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/bg_messages"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/ivLImage"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/bubble_in"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="5dip"
+            app:riv_border_width="2dip"
+            app:riv_border_color="#56C7C6C6"
+
+
+            app:riv_oval="false" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivLForward"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp" />
+    </RelativeLayout>
+        <TextView
+
+            android:textStyle="normal"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/tvLTime"
+            android:padding="@dimen/_2sdp"
+            android:textColor="#000"
+            android:text="2020-01-24 03:15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

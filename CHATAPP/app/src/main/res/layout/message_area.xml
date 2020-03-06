@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#9E9999"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <EditText
+
+        android:padding="@dimen/_10sdp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="#CFD8DC"
+        android:textColor="#CFD8DC"
+        android:hint="Write a message..."
+        android:id="@+id/etMessageArea"
+        android:maxHeight="80dp"
+        />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:padding="4dp"
+android:layout_gravity="center"
+        android:src="@drawable/ic_send_black_24dp"
+        android:id="@+id/ivSend"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:padding="4dp"
+        android:backgroundTint="#fff"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:id="@+id/ivGallery"/>
+</LinearLayout>
